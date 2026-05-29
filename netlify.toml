@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://appbackend.base44.com/api/:splat"
+  to = "https://app.base44.com/api/:splat"
   status = 200
   force = true
 
