@@ -5,7 +5,7 @@ import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/pulse/',
   logLevel: 'error', // Suppress warnings, only show errors
   plugins: [
     base44({
