@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import AddStaffModal from '@/components/Staff/Addstaffmodel';
-import StaffCard from '@/components/Staff/Staffcard';
+import AddStaffModal from '@/components/staff/AddStaffModel';
+import StaffCard from '@/components/staff/StaffCard';
 
 const staffMembers = [
   { name: 'Emeka Adebayo', role: 'Cook', email: 'emeka@pulse.com', phone: '+234 800 123 4567', avatar: '👨‍🍳', status: 'active', hours: 48 },

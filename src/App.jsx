@@ -12,7 +12,7 @@ import Login from '@/pages/Login';
 import Register from '@/pages/Register';
 import ForgotPassword from '@/pages/ForgotPassword';
 import ResetPassword from '@/pages/ResetPassword';
-import AppLayout from '@/components/layout/AppLayout';
+import AppLayout from '@/components/layout/Applayout';
 import Dashboard from '@/pages/Dashboard';
 import Staff from '@/pages/Staff';
 import Payroll from '@/pages/Payroll';
