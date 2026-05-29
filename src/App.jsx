@@ -20,7 +20,19 @@ import Operations from '@/pages/Operations';
 import Settings from '@/pages/Settings';
 
 const AuthenticatedApp = () => {
-  const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
+  return (
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/payroll" element={<Payroll />} />
+        <Route path="/operations" element={<Operations />} />
+        <Route path="/settings" element={<Settings />} />
+      </Route>
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
+  );
+};
 
   // Show loading spinner while checking app public settings or auth
   if (isLoadingPublicSettings || isLoadingAuth) {
