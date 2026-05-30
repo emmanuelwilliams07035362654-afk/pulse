@@ -33,13 +33,14 @@ export default function Sidebar({ isOpen, onClose }) {
 
       <aside
         className={`
-  fixed top-0 left-0 z-50 h-full w-72
-  bg-sidebar text-sidebar-foreground
-  flex flex-col
-  transition-transform duration-300 ease-out
-  ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-  lg:translate-x-0 lg:static lg:z-auto
-`}
+          fixed top-0 left-0 z-50 h-full w-72
+          bg-sidebar text-sidebar-foreground
+          flex flex-col
+          transition-transform duration-300 ease-out
+          ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+          lg:translate-x-0 lg:static lg:z-auto
+        `}
+      >
         <div className='flex items-center justify-between px-6 py-6'>
           <Link to='/' className='flex items-center gap-3' onClick={onClose}>
             <div className='w-10 h-10 rounded-xl bg-primary flex items-center justify-center animate-pulse-glow'>
